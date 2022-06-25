@@ -41,6 +41,7 @@ function renderMessages(){
             </div>
             </li>
         `;
+        document.querySelector("ul").innerHTML += messageitem;
         } else if (messagesdata[i].type=='message'||messagesdata[i].to==user){
             messageitem = `
             <li>
@@ -49,9 +50,9 @@ function renderMessages(){
             </div>
             </li>
         `;
+        document.querySelector("ul").innerHTML += messageitem;
         }
 
-    document.querySelector("ul").innerHTML += messageitem;
     }
     const lastmessage = document.querySelector('ul li:last-child');
     lastmessage.scrollIntoView();
