@@ -20,8 +20,14 @@
     </ul>
     
     <div class="send">
-        <input type="text" placeholder="Escreva aqui..."/>
-        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div class="messagetosend">
+            <input type="text" placeholder="Escreva aqui..." />
+        </div>
+
+        <div class="enter" onclick="sendMessage()">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+
     </div>
     
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

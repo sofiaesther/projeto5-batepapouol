@@ -6,13 +6,16 @@ body{
 }
 body h1{
     font-weight: bold;
+
 }
 body h2{
     font-style: italic;
     font-size: 16px;
+
 }
 body h3{
     color:#aaaaaa;
+
 }
 body h4{
     opacity: 0%;
@@ -22,7 +25,7 @@ body h4{
     width:100%;
     position:fixed;
     top:0;
-    right: 0;
+    left: 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -45,37 +48,37 @@ content{
     margin-bottom: 105px;
 }
 .status{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    width:100%;
     margin: 10px 0 0 0;
     background-color: #dcdcdc;
     padding: 10px;
 }
 .message{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    width:100%;
     margin: 10px 0 0 0;
     padding: 10px;
     background-color: white;
 }
-.reserved{
+.private_message{
+    display: inline-flex;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    width:100%;
     margin: 10px 0 0 0;
     background-color: #ffdede;
 }
 .send{
     background-color: white;
     width:100%;
-    position:fixed;
-    bottom:0;
-    right: 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    z-index: 2;
+    position:fixed;
+    bottom:0;
+    right: 0;
+    z-index: 3;
     box-shadow: 0 1px 6px #dcdcdc;
 }
 .send h2{
@@ -84,5 +87,15 @@ content{
 .send ion-icon{
     font-size: 30px;
     color: black;
-    margin-right: 20px;
+    margin: 20px 20px 20px auto;
+}
+input{
+    outline: none;
+    border: none;
+    width: auto;
+    height: auto;
+    margin: auto auto 20px 20px;
+}
+.messagetosend {
+    display: block;
 }
